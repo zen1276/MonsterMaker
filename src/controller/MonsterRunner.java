@@ -2,11 +2,10 @@ package controller;
 
 public class MonsterRunner
 {
-
-	
-	public void start()
+	public static void main(String[]args)
 	{
-		
+		MonsterController app = new MonsterController();
+		app.start();
 	}
 	
 	
