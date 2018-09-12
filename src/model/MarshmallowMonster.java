@@ -91,7 +91,7 @@ public class MarshmallowMonster
 	
 	public String toString()
 	{
-		String description = "My monsters name is " + name + "s/he/they have " + legCount + "legs"
+		String description = "My monsters name is " + name + " it has " + legCount + "legs"
 								+ " and the scary or silly thing it says is: The fitness grand paser test is a multi-functional...";
 		
 		return description;
