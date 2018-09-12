@@ -47,6 +47,7 @@ public class MonsterController
 		
 		inputScanner.close();
 		
+		
 		//System.out.println(myMonster);
 		//myMonster.setArmCount(9999);
 		//System.out.println("My monster has this many arms: " + myMonster.getArmCount() );
