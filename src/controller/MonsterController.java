@@ -41,9 +41,10 @@ public class MonsterController
 		String legCount = JOptionPane.showInputDialog(null, "How many legs will your monster have?");
 //		inputScanner = new Scanner(System.in);
 //		double legCount = inputScanner.nextDouble();
+		int legs = 0;
 		if (validInt(legCount))
 		{
-			int legs = Integer.parseInt(legCount);
+			legs = Integer.parseInt(legCount);
 			userMonster.setLegCount(legs);
 		}
 		
@@ -51,9 +52,10 @@ public class MonsterController
 		String eyeCount = JOptionPane.showInputDialog(null, "How many eyes does your monster have?");
 //		inputScanner = new Scanner(System.in);
 //		int eyeCount = inputScanner.nextInt();
+		int eyes= 0;
 		if (validInt(eyeCount))
 		{
-			int eyes = Integer.parseInt(eyeCount);
+			eyes = Integer.parseInt(eyeCount);
 			userMonster.setEyeCount(eyes);
 		}
 		
