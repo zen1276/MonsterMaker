@@ -1,7 +1,7 @@
 package controller;
 
 import model.MarshmallowMonster;
-import java.util.Scanner;
+//import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 public class MonsterController
@@ -60,16 +60,29 @@ public class MonsterController
 //		System.out.println("Is your monster going to have any noses? true/false");
 		String hasNoses = JOptionPane.showInputDialog(null, "Is your monster going to have any noses? true/false");
 //		inputScanner = new Scanner(System.in);
-//		boolean hasNoses = inputScanner.nextBoolean();
+//		boolean hasNoses = inputScanner.nextBoolean();		
 		
 //		System.out.println("How many arms does your monster have?");
 		String armCount = JOptionPane.showInputDialog(null, "How many arms does your monster have?");
 //		inputScanner = new Scanner(System.in);
 //		int armCount = inputScanner.nextInt();
+		int arms = 0;
 		if (validInt(armCount))
 		{
-			int arms = Integer.parseInt(armCount);
+			arms = Integer.parseInt(armCount);
 			userMonster.setArmCount(arms);
+		}
+		if (arms == 2)
+		{
+			JOptionPane.showMessageDialog(null, "wow, you're boring... 2 arms. W   O   W");
+		}
+		else if (arms < 2)
+		{
+			JOptionPane.showMessageDialog(null, "well that's not very convenient. What is it gonna do with that many arms?");
+		}
+		else
+		{
+			JOptionPane.showMessageDialog(null, "slow down there buckaroo, that seems like a few too many arms.");
 		}
 		
 //		inputScanner.close();
